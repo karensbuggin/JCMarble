@@ -1,0 +1,447 @@
+html{
+    box-sizing:border-box;
+    background-color:#fffdfc;
+    overflow-x:hidden;
+    margin:0;
+    padding:0;
+}
+
+body{
+    width:100vw;
+    margin-left:0;
+    font-family:Poppins;
+    object-fit: cover;
+}
+
+:root{
+    --maroon:#380707;
+    --peachy-white:#fffdfc;
+    --peach:#fadfcc;
+}
+
+/* --- General Styling Classes --- */
+.full-width{
+    width:100%;
+    background-color: var(--maroon);
+}
+.title {
+    margin: 0 auto;
+    text-align:center;
+    text-transform:uppercase; 
+}
+
+.info-paragraphs{
+    width:80vw;
+    max-width: 80vw;
+    margin-bottom:20px;
+    padding: 1rem;
+    padding-top:0;
+}
+
+.section-photo{
+    width:75%;
+    padding:50px;
+    display:flex;
+    align-items:center;
+    flex-direction:row;
+}
+
+.homepage-photo{
+    margin:auto;
+    border-radius:25px;
+}
+
+img.hover-shadow{
+    transition:0.3s;
+}
+
+.caption{
+    text-align:center;
+}
+
+
+
+
+/* --- Nav Bar --- */
+.nav-bar{
+    background-color: var(--maroon);
+    color:#fffdfc;
+    width: 100vw;
+    height: 10vh;
+    position: fixed;
+    margin:0;
+    top:0;
+    left:0;
+}
+
+#nav-menu{
+    max-width:80vw;
+    height:10vh;
+    margin:auto;
+    position:relative;
+    /*background-color:yellow;*/
+}
+
+#logo{
+    max-width:50px;
+    max-height:50px;
+    float:left;
+    padding: 10px;
+}
+
+.nav-links{
+    float:right;
+    width:fit-content;
+    padding:25px 10px 0px 0px;
+    text-align:center;
+    text-transform:uppercase;
+    color:#fffdfc
+}
+
+a:link{
+    /*background-color:beige;*/
+    font-family: Poppins;
+    padding:15px;
+    text-decoration: none;
+    color:#fffdfc;
+}
+
+a:visited{
+    color:#fffdfc;
+} 
+
+a:hover{
+    font-style:italic;
+}
+
+/* --- Hero --- */
+
+#hero{
+    display:flex;
+    align-items: center;
+    width:80vw;
+    
+    margin:auto;
+    margin-top:50px;
+    font-family:Poppins;
+}
+
+#hero-title{
+    line-height:35px;
+    text-transform: uppercase;
+    padding-top:20px;
+}
+
+#hero-photo{
+    width:450px;
+    height:375px;
+    box-shadow: 5px 5px 10px 1px grey;
+}
+
+/* --- Services Section on Home Page --- */
+
+.service-card{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    margin:auto;
+}
+
+.service-card p{
+    background-color:var(--maroon);
+    color:var(--peachy-white);
+    width:200px;
+    height:50px;
+    text-align:center;
+    margin: -10px auto 0 auto;
+    border-radius:0 0 5px 5px;
+    padding-top:24px;
+}
+
+.service-card img{
+    width:200px;
+    height:200px;
+    border-radius:5px;
+    object-fit:cover;
+}
+
+.services-list{
+    display:flex;
+    flex-direction: row;
+    margin:auto;
+}
+
+#service-title{
+    margin: 20px auto;
+}
+
+
+
+/*
+
+#services-list, #stones{
+    width:80vw;
+    margin:auto;
+    height:fit-content;
+    /*background-color: #fadfcc;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+}
+
+#services-list ul, #stones ul{
+    padding:100px;
+}
+
+#services-list li, #stones li{
+    margin: 10px auto;
+}
+
+.services-photo{
+    width: 450px;
+    height:350px;
+    object-fit:cover;
+    padding:50px;
+}
+*/
+
+/* --- About & Contact Section --- */
+
+.about-section{
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    margin:auto;
+    /*flex-wrap:wrap;*/
+    
+}
+
+.about-photo{
+    width:475px;
+    height:350px;
+    margin:0 20px;
+}
+
+#about-info p{
+    font-size:16px;
+}
+
+
+
+#contact, #about{
+    color:var(--peachy-white);
+    margin: 20px auto;
+    font-family:Poppins;
+    align-items:center;
+    font-size:20px;
+    width:80vw;
+    padding: 20px 0;
+}
+
+.contact-header{
+    text-align:center;
+}
+
+.contact a{
+    color:var(--peachy-white);
+    margin: 0 auto;
+    font-size:14px;
+}
+
+.fa{
+    color:color:var(--peachy-white);
+}
+
+/* --- Contact Form --- */
+
+#contact-section form{
+    width:80vw;
+    max-width:700px;
+    margin:auto;
+    place-items:center;
+}
+
+label{
+    display:block;
+    color:var(--peachy-white);
+    font-family:Poppins;
+    font-size:20px;
+    text-align:left;
+    margin: 10px auto;
+    width:100%;
+}
+
+input{
+    display:block;
+    background-color:var(--peach);
+    margin:auto;
+    width:100%;
+    height:40px;
+}
+
+textarea{
+    display:block;
+    width:100%;
+    height:100px;
+    background-color:var(--peach);
+}
+
+#submit{
+    font-family:Poppins, sans-serif;
+    text-transform:uppercase;
+    font-size:16px;
+    margin:20px auto;
+    width:75%;
+    color:var(--peachy-white);
+    
+}
+
+#submit:hover{
+    background-color:var(--maroon);
+    color: var(--peach);
+    border: 3px solid var(--peach);
+}
+
+#submit:active{
+    color:var(--peach);
+}
+
+
+/* --- Services --- */
+.service-page{
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+}
+
+.service-descriptions{
+    width:40vw;
+    margin:auto;
+}
+
+.service-descriptions-bottom{
+    width:80vw;
+    margin:auto;
+    
+}
+
+#service-page p{
+    font-size:14px;
+}
+
+.service-descriptions h3, .service-descriptions-bottom h3{
+    text-decoration:underline;
+}
+
+#services-contact{
+    width:40vw;
+}
+
+#services-caption{
+    width:70vw;
+    margin:auto;
+    padding:20px 0;
+}
+
+/* --- Gallery --- */
+#gallery-page, #services-page{
+    margin:15vh auto;
+    width:90vw;
+    
+}
+
+.gallery{
+    margin: auto;
+    background-color:var(--maroon);
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:center;
+    /*gap:10px;*/
+    
+}
+
+.gallery img{
+    width: 200px;
+    height:200px;
+    object-fit:cover;
+    border-radius: 10px;
+}
+
+.gallery img:hover{
+    transform: scale(1.05);
+}
+
+
+
+/* TODO - Add Media Query for images; Add Lightbox + Slideshow to gallery */
+
+
+/* --- Services --- */ 
+
+.services-page{
+    display:flex; 
+    flex-direction: row;
+}
+
+#services-contact form{
+    color: var(--maroon);
+}
+
+
+/* --- Footer --- */
+
+
+#footer{
+    margin:0 auto;
+    place-items:center;
+    width:80vw;
+    height: 85px;
+}
+
+.footer img{
+    width:100px;
+}
+
+.footer a{
+    color:var(--maroon);
+    
+}
+
+i{
+    color: var(--maroon);
+    margin:0;
+}
+
+.pageLinks{
+    margin-top: 27px;
+    display:inline-block;
+    font-size:14px;
+}
+
+.fa-facebook-f, .fa-instagram{
+    display:inline-block;
+    font-size:20px;
+    margin:0 5px;
+}
+
+.contact-icons{
+    margin:27px 2px 2px 0;
+    float:right;
+    font-size:14px;
+    width:fit-content;
+    
+}
+
+
+.contact-icons p{
+    text-align:center;
+    margin: 0 auto;
+}
+
+.contact-icons a{
+    padding: 3px;
+}
+
+
+
