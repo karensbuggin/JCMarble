@@ -1,3 +1,14 @@
+/* Media Query Breakpoints 
+
+320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+
+
+*/
+
+
 html{
     box-sizing:border-box;
     background-color:#fffdfc;
@@ -49,6 +60,8 @@ body{
 .homepage-photo{
     margin:auto;
     border-radius:25px;
+    min-width:300px;
+    max-width:1000px;
 }
 
 img.hover-shadow{
@@ -126,11 +139,12 @@ a:hover{
     display:flex;
     align-items: center;
     width:80vw;
-    
     margin:auto;
     margin-top:50px;
     font-family:Poppins;
 }
+
+    
 
 #hero-title{
     line-height:35px;
@@ -144,12 +158,41 @@ a:hover{
     box-shadow: 5px 5px 10px 1px grey;
 }
 
+@media screen and (max-width:600px){
+    #hero-photo{
+        width: 300px;
+        height: 225px;
+        object-fit:cover;
+    }
+
+    #hero{
+        font-size:12px;
+        flex-direction:column-reverse;
+        width:90%;
+    }
+}
+
+@media screen and (min-width:600px) and (max-width:1200px){
+    #hero-photo{
+        width: 400px;
+        height: 325px;
+        object-fit:cover;
+    }
+
+    #hero{
+        flex-direction: column-reverse;
+        width:90%;
+    }
+}
+
+
+
 /* --- Services Section on Home Page --- */
 
 .service-card{
     display:flex;
     flex-direction: column;
-    margin:auto;
+    margin: 5px;
     align-items:center;
 }
 
@@ -176,13 +219,16 @@ a:hover{
     display:flex;
     flex-direction:row;
     margin: 0 auto;
-    background-color:aqua;
+    width:fit-content;
     flex-wrap:wrap;
+    place-items:center;
 }
 
 #service-title{
     margin: 20px auto;
 }
+
+
 
 
 
@@ -236,6 +282,41 @@ a:hover{
 }
 
 
+@media screen and (max-width:600px){
+    .about-photo{
+        width: 300px;
+        height: 225px;
+        object-fit:cover;
+    }
+
+    .about-section{
+        font-size:12px;
+        flex-direction:column;
+        width:90%;
+    }
+    .about-section h1{
+        margin:10px;
+    }
+}
+
+@media screen and (min-width:600px) and (max-width:1200px){
+    .about-photo{
+        width: 400px;
+        height: 325px;
+        object-fit:cover;
+    }
+
+    .about-section{
+        flex-direction:column;
+        width:90%;
+    }
+
+    .about-section h1{
+        margin:10px;
+    }
+}
+
+
 
 #contact, #about{
     color:var(--peachy-white);
@@ -262,6 +343,18 @@ a:hover{
 }
 
 /* --- Contact Form --- */
+
+@media screen and (max-width:1200px){
+    .contact-header{
+        font-size:16px;
+    }
+}
+
+@media screen and (max-width:600px){
+    .contact-header{
+        font-size:14px;
+    }
+}
 
 #contact-section form{
     width:80vw;
@@ -399,6 +492,21 @@ textarea{
 
 
 /* --- Footer --- */
+
+@media screen and (max-width:600px){
+    .footer img{
+        width:50px;
+    }
+    .pageLinks, .pageLinks a{
+        display:none;
+    }
+
+    .contact-icons{
+        display:none;
+    }
+
+
+}
 
 
 #footer{
