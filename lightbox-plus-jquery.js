@@ -10,7 +10,8 @@
  * https://jquery.org/license
  *
  * Date: 2022-12-20T21:28Z
- */
+*/
+
 ( function( global, factory ) {
 
 	"use strict";
@@ -11563,3 +11564,4 @@ return jQuery;
 
   return new Lightbox();
 }));
+
