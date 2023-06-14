@@ -92,7 +92,10 @@ img.hover-shadow{
     height:10vh;
     margin:auto;
     position:relative;
-    /*background-color:yellow;*/
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    
 }
 
 #logo{
@@ -105,7 +108,7 @@ img.hover-shadow{
 .nav-links{
     float:right;
     width:fit-content;
-    padding:25px 10px 0px 0px;
+    /*padding:25px 10px 0px 0px;*/
     text-align:center;
     text-transform:uppercase;
     color:#fffdfc
@@ -132,24 +135,53 @@ a:hover{
     font-size:20px;
     display: none;
 }
-/*
+
+
 .hamburger-links{
     display:none;
 }
 
 @media screen and (max-width:800px){
+   
+    .hamburger{
+        display:block;
+        cursor:pointer;
+        
+    }
+
+    .hamburger .line{
+        width:30px;
+        height:3px;
+        background-color:var(--peachy-white);
+        margin:6px 0;
+    }
+
     .nav-links{
-        display:none;
+        /*display:none;*/
+        height:0;
+        width:100%;
+        position:absolute;
+        top:75px;
+        background-color: var(--maroon);
+        transition:0.2s;
+        overflow:hidden;
+        
     }
 
-    .nav-bar i{
-        display:inline block;
+    .nav-links.active{
+        height:450px;
     }
-
+    .nav-links a{
+        display:block;
+        text-align:center;
+        transition: 0.5s;
+        opacity:0;
+        
+    }
 
 
 }
-*/
+
 /* --- Hero --- */
 
 #hero{
