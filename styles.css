@@ -132,7 +132,24 @@ a:hover{
     font-size:20px;
     display: none;
 }
+/*
+.hamburger-links{
+    display:none;
+}
 
+@media screen and (max-width:800px){
+    .nav-links{
+        display:none;
+    }
+
+    .nav-bar i{
+        display:inline block;
+    }
+
+
+
+}
+*/
 /* --- Hero --- */
 
 #hero{
@@ -417,7 +434,7 @@ textarea{
 }
 
 .service-descriptions{
-    width:40vw;
+    width: 35vw;
     margin:auto;
 }
 
@@ -437,6 +454,21 @@ textarea{
 
 #services-contact{
     width:40vw;
+    padding:20px;
+    background-color:var(--maroon);
+    color: var(--peachy-white);
+    border-radius:5px;
+    box-shadow: 5px 5px 10px 1px grey;
+    
+}
+
+#services-contact h2{
+    text-align:center;
+    
+}
+
+#services-contact p{
+    padding:0 40px;
 }
 
 #services-caption{
@@ -444,6 +476,47 @@ textarea{
     margin:auto;
     padding:20px 0;
 }
+
+@media screen and (max-width:800px){
+    .service-page{
+        display:flex;
+        flex-direction: column;
+        justify-content:center;
+    }
+
+    #service-page p{
+        font-size:12px;
+    }
+
+    .service-descriptions, #services-caption{
+        width:85vw;
+        padding:0;
+    }
+
+    #services-contact{
+        width:85vw;
+        padding:20px;
+        font-size:12px;
+    }
+}
+
+@media screen and (min-width:800px) and (max-width:1200px){
+    
+    #services-contact{
+        width:40vw;
+        padding:20px;
+        font-size:14px;
+        max-height:800px;
+        height:fit-content;
+    }
+
+    #services-contact form label{
+        font-size:14px;
+    }
+
+}
+
+
 
 /* --- Gallery --- */
 #gallery-page, #services-page{
@@ -486,9 +559,9 @@ textarea{
     flex-direction: row;
 }
 
-#services-contact form{
-    color: var(--maroon);
-}
+
+
+
 
 
 /* --- Footer --- */
