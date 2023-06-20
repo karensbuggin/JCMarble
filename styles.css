@@ -75,8 +75,10 @@ img.hover-shadow{
 
 
 
+
+
 /* --- Nav Bar --- */
-.nav-bar{
+/*.nav-bar, nav{
     background-color: var(--maroon);
     color:#fffdfc;
     width: 100vw;
@@ -96,7 +98,43 @@ img.hover-shadow{
     justify-content:space-between;
     align-items: center;
     
+}*/
+
+
+
+.flex{
+    display:flex;
+    gap: var(--gap, 1rem);
 }
+
+
+.primary-header{
+    align-items:center;
+    justify-content:space-between;
+    background-color: var(--maroon);
+    position:fixed;
+    top:0;
+    width:100%;
+    
+}
+
+.primary-navigation{
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+
+.mobile-nav-toggle{
+    display:none;
+}
+
+.primary-navigation a{
+    text-decoration:none;
+    margin-inline-end:1em;
+}
+a:visited{
+    color:#fffdfc;
+} 
 
 #logo{
     max-width:50px;
@@ -104,27 +142,66 @@ img.hover-shadow{
     float:left;
     padding: 10px;
 }
+@media screen and (max-width:35em){
+    .primary-navigation{
+        --gap:2em;
+        position:fixed;
+        inset:0 0 0 30%;
+        background:var(--maroon);
+        z-index:1000;
+        flex-direction:column;
+        padding: min(20vh, 10rem) 2rem;
+        
+        transform: translateX(100%);
+        transition: transform 350ms ease-out;
+    }
 
+    .primary-navigation[data-visible="true"]{
+        transform:translateX(0%);
+    }
+
+    .mobile-nav-toggle{
+        position:absolute;
+        background:url(/Assets/icons8-hamburger-menu.svg);
+        background-repeat:no-repeat;
+        width:2rem;
+        border:0;
+        aspect-ratio:1;
+        top:2rem;
+        right:2rem;
+        z-index:9999;
+        display:block;
+    }
+
+    .mobile-nav-toggle[aria-expanded="true"]{
+        background-image:url(/Assets/icons8-close.svg);
+    }
+
+    svg{
+        color:var(--peachy-white);
+    }
+}
+
+
+/*
 .nav-links{
     float:right;
     width:fit-content;
-    /*padding:25px 10px 0px 0px;*/
+    /*padding:25px 10px 0px 0px;*/ /*
     text-align:center;
     text-transform:uppercase;
     color:#fffdfc
 }
 
 a:link{
-    /*background-color:beige;*/
+    /*background-color:beige;*/ /*
     font-family: Poppins;
     padding:15px;
     text-decoration: none;
     color:#fffdfc;
 }
 
-a:visited{
-    color:#fffdfc;
-} 
+
 
 a:hover{
     font-style:italic;
@@ -157,7 +234,7 @@ a:hover{
     }
 
     .nav-links{
-        /*display:none;*/
+        /*display:none;*/ /*
         height:0;
         width:100%;
         position:absolute;
@@ -180,7 +257,7 @@ a:hover{
     }
 
 
-}
+} */
 
 /* --- Hero --- */
 
