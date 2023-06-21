@@ -11,6 +11,7 @@
         ">
         <link rel="stylesheet" href="lightbox.css">
         <script src="nav.js" defer></script>
+        <script src="lightbox-plus-jquery.js"></script>
         
     </head>
     <body>
@@ -37,7 +38,6 @@
                 From dull and damaged to vibrant and stunning, we bring out the natural beauty in all types of stone surfaces. 
                 Contact us today to schedule your own transformation! 
             </p>
-            
             <div class="gallery full-width">
                 <a href="assets/gallery-img1.jpg" data-lightbox="gallery"><img src="assets/gallery-img1.jpg" onClick="openModal();currentSlide(1)" class="hover-shadow"></a>
                 <a href="assets/gallery-img2.png" data-lightbox="gallery"><img src="assets/gallery-img2.png" onClick="openModal();currentSlide(2)" class="hover-shadow"></a>
@@ -53,11 +53,11 @@
                 <a href="assets/gallery-img13.jpg" data-lightbox="gallery"><img src="assets/gallery-img13.jpg" onClick="openModal();currentSlide(12)" class="hover-shadow"></a>
                 <a href="assets/gallery-img14.jpg" data-lightbox="gallery"><img src="assets/gallery-img14.jpg" onClick="openModal();currentSlide(13)" class="hover-shadow"></a>
                 <a href="assets/gallery-img15.jpg" data-lightbox="gallery"><img src="assets/gallery-img15.jpg" onClick="openModal();currentSlide(14)" class="hover-shadow"></a>
-                <a href="assets/gallery-img16.jpg" data-lightbox="gallery"><img src="assets/gallery-img16.jpg" onClick="openModal();currentSlide(15)" class="hover-shadow"></a>
-                <a href="assets/gallery-img17.jpg" data-lightbox="gallery"><img src="assets/gallery-img17.jpg" onClick="openModal();currentSlide(16)" class="hover-shadow"></a>
+                <a href="assets/gallery-img16.jpg" data-lightbox="gallery"><img src="assets/gallery-img16.jpg" onClick="openModal();currentSlide(15)" class="hover-shadow"></a> 
+                <a href="assets/gallery-img17.jpg" data-lightbox="gallery"><img src="assets/gallery-image17.jpg" onClick="openModal();currentSlide(16)" class="hover-shadow"></a>
                 <a href="assets/gallery-img18.jpg" data-lightbox="gallery"><img src="assets/gallery-img18.jpg" onClick="openModal();currentSlide(17)" class="hover-shadow"></a> 
                 <a href="assets/gallery-img19.jpg" data-lightbox="gallery"><img src="assets/gallery-img19.jpg" onClick="openModal();currentSlide(18)" class="hover-shadow"></a>
-                <a href="assets/gallery-img20.jpg" data-lightbox="gallery"><img src="assets/gallery-img20.jpg" onClick="openModal();currentSlide(19)" class="hover-shadow"></a>
+                <a href="assets/entrance-photo-after.jpg" data-lightbox="gallery"><img src="assets/gallery-img20.jpg" onClick="openModal();currentSlide(19)" class="hover-shadow"></a>
                 <a href="assets/gallery-img21.jpg" data-lightbox="gallery"><img src="assets/gallery-img21.jpg" onClick="openModal();currentSlide(20)" class="hover-shadow"></a>
                 <a href="assets/gallery-img22.jpg" data-lightbox="gallery"><img src="assets/gallery-img22.jpg" onClick="openModal();currentSlide(21)" class="hover-shadow"></a>
                 <a href="assets/gallery-img23.jpg" data-lightbox="gallery"><img src="assets/gallery-img23.jpg" onClick="openModal();currentSlide(22)" class="hover-shadow"></a>
@@ -90,8 +90,6 @@
                 <a href="assets/gallery-img50.jpg" data-lightbox="gallery"><img src="assets/gallery-img50.jpg" onClick="openModal();currentSlide(49)" class="hover-shadow"></a>
                 <a href="assets/gallery-img51.jpg" data-lightbox="gallery"><img src="assets/gallery-img51.jpg" onClick="openModal();currentSlide(50)" class="hover-shadow"></a>
             </div>
-
-            
             <div id="lightBox" class="modal">
                 <span class="close cursor" onclick="closeModal()">&times;</span>
                 <div class="modal-content">
@@ -155,9 +153,9 @@
                         <div class="numbertext">15 / 50</div>
                         <img src="/Assets/gallery-img16.jpg" style="width:100%">
                     </div>
-                    <div class="mySlides">
+                   <div class="mySlides">
                         <div class="numbertext">16 / 50</div>
-                        <img src="/Assets/gallery-img17.jpg" style="width:100%">
+                        <img src="/Assets/gallery-image17.jpg" style="width:100%">
                     </div>
                     <div class="mySlides">
                         <div class="numbertext">17 / 50</div>
@@ -169,7 +167,7 @@
                     </div>
                     <div class="mySlides">
                         <div class="numbertext">19 / 50</div>
-                        <img src="/Assets/gallery-img20.jpg" style="width:100%">
+                        <img src="/Assets/entrance-photo-after.jpg" style="width:100%">
                     </div>
                     <div class="mySlides">
                         <div class="numbertext">20 / 50</div>
@@ -298,15 +296,9 @@
                     
                     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                     <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-                    
-
                 </div>
             </div>
-
         </section>
-        <script src="script.js"></script> 
-    
-        <script src="lightbox-plus-jquery.js"></script>
+        
     </body>
 </html>

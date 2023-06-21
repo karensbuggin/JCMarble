@@ -87,34 +87,6 @@ a:hover{
     font-style:italic;
 }
 
-
-
-
-/* --- Nav Bar --- */
-/*.nav-bar, nav{
-    background-color: var(--maroon);
-    color:#fffdfc;
-    width: 100vw;
-    height: 10vh;
-    position: fixed;
-    margin:0;
-    top:0;
-    left:0;
-}
-
-#nav-menu{
-    max-width:80vw;
-    height:10vh;
-    margin:auto;
-    position:relative;
-    display:flex;
-    justify-content:space-between;
-    align-items: center;
-    
-}*/
-
-
-
 .flex{
     display:flex;
     gap: var(--gap, 1rem);
@@ -194,71 +166,6 @@ a:visited{
         color:var(--peachy-white);
     }
 }
-
-
-/*
-.nav-links{
-    float:right;
-    width:fit-content;
-    /*padding:25px 10px 0px 0px;*/ /*
-    text-align:center;
-    text-transform:uppercase;
-    color:#fffdfc
-}
-
-
-
-.nav-bar i{
-    color:var(--peachy-white);
-    font-size:20px;
-    display: none;
-}
-
-
-.hamburger-links{
-    display:none;
-}
-
-@media screen and (max-width:800px){
-   
-    .hamburger{
-        display:block;
-        cursor:pointer;
-        
-    }
-
-    .hamburger .line{
-        width:30px;
-        height:3px;
-        background-color:var(--peachy-white);
-        margin:6px 0;
-    }
-
-    .nav-links{
-        /*display:none;*/ /*
-        height:0;
-        width:100%;
-        position:absolute;
-        top:75px;
-        background-color: var(--maroon);
-        transition:0.2s;
-        overflow:hidden;
-        
-    }
-
-    .nav-links.active{
-        height:450px;
-    }
-    .nav-links a{
-        display:block;
-        text-align:center;
-        transition: 0.5s;
-        opacity:0;
-        
-    }
-
-
-} */
 
 /* --- Hero --- */
 
@@ -356,37 +263,6 @@ a:visited{
     margin: 20px auto;
 }
 
-
-
-
-
-/*
-
-#services-list, #stones{
-    width:80vw;
-    margin:auto;
-    height:fit-content;
-    /*background-color: #fadfcc;
-    display:flex;
-    flex-direction:row;
-    flex-wrap:wrap;
-}
-
-#services-list ul, #stones ul{
-    padding:100px;
-}
-
-#services-list li, #stones li{
-    margin: 10px auto;
-}
-
-.services-photo{
-    width: 450px;
-    height:350px;
-    object-fit:cover;
-    padding:50px;
-}
-*/
 
 /* --- About & Contact Section --- */
 
@@ -660,19 +536,12 @@ textarea{
 
 
 
-/* TODO - Add Media Query for images; Add Lightbox + Slideshow to gallery */
-
-
 /* --- Services --- */ 
 
 .services-page{
     display:flex; 
     flex-direction: row;
 }
-
-
-
-
 
 
 /* --- Footer --- */
@@ -688,8 +557,6 @@ textarea{
     .contact-icons{
         display:none;
     }
-
-
 }
 
 
