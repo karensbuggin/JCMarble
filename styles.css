@@ -139,7 +139,7 @@ a:visited{
 
 @media screen and (min-width:800px) and (max-width:1200px){
     #logo{
-        margin-left:2rem;
+        margin-left:5rem;
     }
 
     .primary-navigation{
@@ -173,10 +173,15 @@ a:visited{
         width:2rem;
         border:0;
         aspect-ratio:1;
-        top:2rem;
+        top:1.5rem;
         right:2rem;
         z-index:9999;
         display:block;
+
+    }
+
+    #logo{
+        margin-left:2rem;
     }
 
     .mobile-nav-toggle[aria-expanded="true"]{
