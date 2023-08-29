@@ -108,6 +108,13 @@ a:hover{
     top:0;
     width:100%;
     
+    
+}
+
+.site-title{
+    color:var(--peachy-white);
+    text-transform:uppercase;
+
 }
 
 .primary-navigation{
@@ -141,6 +148,9 @@ a:visited{
     #logo{
         margin-left:5rem;
     }
+    .site-title{
+       display:none; 
+    }
 
     .primary-navigation{
         font-size:14px;
@@ -165,6 +175,7 @@ a:visited{
     .primary-navigation[data-visible="true"]{
         transform:translateX(0%);
     }
+
 
     .mobile-nav-toggle{
         position:absolute;
@@ -244,6 +255,12 @@ a:visited{
         width:90%;
     }
 }
+
+
+
+
+
+
 
 
 
